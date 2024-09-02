@@ -1,7 +1,7 @@
-"use client";
-import React, { useEffect } from "react";
+import React from "react";
 import { TimelineCardType } from "@/app/types/timeline";
 import Pill from "./Pill";
+import Image from "next/image";
 
 const TimelineCard = ({
     date,
@@ -13,20 +13,9 @@ const TimelineCard = ({
     isLast,
     midEnd,
     corner,
+    imgPos,
+    imgSize,
 }: TimelineCardType) => {
-    useEffect(() => {
-        console.log(
-            date,
-            title,
-            status,
-            image,
-            align,
-            curved,
-            isLast,
-            midEnd,
-            corner
-        );
-    }, [date, title, status, image, align, curved, isLast, midEnd, corner]);
     return (
         <div className="relative w-full h-52 text-center grid place-items-center border-2 border-black-pri rounded-xl py-5 gap-3 text-black-pri">
             <p className="font=[500] text-[22px]">{title}</p>
@@ -39,6 +28,15 @@ const TimelineCard = ({
                 isLast={isLast!}
                 midEnd={midEnd!}
                 corner={corner!}
+            />
+            <Image
+                src={image}
+                alt="image"
+                width={imgSize}
+                height={imgSize}
+                className={`z-20 absolute -bottom-[3.5rem] ${
+                    imgPos === "left" ? "-left-16" : "-right-16"
+                }`}
             />
         </div>
     );

@@ -8,4 +8,6 @@ export type TimelineCardType = {
     isLast?: boolean;
     midEnd?: string;
     corner?: string;
+    imgPos: string;
+    imgSize: number;
 };
