@@ -26,6 +26,20 @@ const Oraganiser = () => {
       name: "S.Dev Community",
       classname: "ml-10",
     },
+    {
+      src: "/",
+      width: 200,
+      height: 100,
+      name: "Tech IIIT bbsr",
+      classname: "ml-12",
+    },
+    {
+      src: "/",
+      width: 500,
+      height: 300,
+      name: "GDSC NIT Rourkela",
+      classname: "mb-5  ml-2  mt-8",
+    },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
