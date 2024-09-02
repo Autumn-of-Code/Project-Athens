@@ -3,5 +3,9 @@ export type TimelineCardType = {
     title: string;
     status: string;
     image: string;
-    align?: "left" | "right";
+    align?: string;
+    curved?: string;
+    isLast?: boolean;
+    midEnd?: string;
+    corner?: string;
 };
