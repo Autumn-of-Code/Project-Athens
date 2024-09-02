@@ -5,7 +5,10 @@ import Image from "next/image";
 export default function Timeline() {
     return (
         <div className="p-20">
-            <div className="grid grid-cols-3 gap-20 max-w-6xl mx-auto">
+            <h1 className="font-jost font-500 text-[48px] text-[#F12727] ">
+                Timeline
+            </h1>
+            <div className="grid grid-cols-3 gap-20 max-w-6xl mx-auto mt-20">
                 {timelineEvents.map((event, index) =>
                     event.date ? (
                         <TimelineCard key={index} {...event} />

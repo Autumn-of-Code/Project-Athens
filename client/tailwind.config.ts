@@ -13,6 +13,10 @@ const config: Config = {
                     pri: "#252525",
                 },
             },
+            fontFamily: {
+                inter: "var(--inter)",
+                jost: "var(--jost)",
+            },
         },
     },
     plugins: [],
