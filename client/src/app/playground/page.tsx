@@ -3,7 +3,7 @@ import Timeline from "../components/timeline/Timeline";
 
 const Playground: React.FC = () => {
     return (
-        <div className="bg-white">
+        <div className="">
             <Timeline />
         </div>
     );
