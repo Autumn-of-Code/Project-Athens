@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Induction = () => {
   return (
-    <div className="w-100% bg-[#fffbd9] text-primary font-semibold text-3xl text-center fontFamily-jost pt-2">
+    <div className="w-100% bg-white text-primary font-semibold text-3xl text-center fontFamily-jost pt-2">
       We are Inducting...!!!
       <div className="w-90% flex justify-evenly items-center pt-12 pb-5 ">
         <div>

@@ -15,7 +15,6 @@ const config: Config = {
       },
       colors: {
         primary: "#F12727",
-        secondary: "#F5F5F5",
       },
       fontFamily: {
         jost: ["Jost", "sans-serif"],

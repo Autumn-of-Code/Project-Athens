@@ -10,21 +10,21 @@ const Oraganiser = () => {
       width: 500,
       height: 300,
       name: "GDSC Silicon University",
-      classname: "",
+      classname: "mb-5  ml-2  mt-8",
     },
     {
       src: "https://res.cloudinary.com/dqqyuvg1v/image/upload/v1725299204/WTM_1_kcus3p.png",
       width: 200,
       height: 100,
       name: "Women Techmakers",
-      classname: "",
+      classname: "ml-12",
     },
     {
       src: "https://res.cloudinary.com/dqqyuvg1v/image/upload/v1725299204/os_community_logo_1_i1dkn3.png",
       width: 200,
       height: 100,
       name: "S.Dev Community",
-      classname: "",
+      classname: "ml-10",
     },
   ];
 
@@ -41,15 +41,15 @@ const Oraganiser = () => {
   };
 
   return (
-    <div className="w-100% bg-[#fffbd9] text-primary pl-12 font-semibold text-3xl text-left fontFamily-jost">
+    <div className="w-100% bg-white text-primary pl-12 font-semibold text-3xl text-left fontFamily-jost">
       Oragnisers
-      <div className="relative w-full max-w-6xl mx-auto overflow-hidden">
+      <div className="relative w-full max-w-6xl mx-auto overflow-hidden mt-12">
         <div
           className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {images.map(({ src, height, width, classname }, index) => (
-            <div key={index} className="flex-shrink-0 w-1/3 pr-10 mb-9 ">
+            <div key={index} className="flex-shrink-0 w-1/3 pr-10 mb-9 pl-6">
               <Image
                 src={src}
                 alt={`Slide ${index + 1}`}
@@ -57,22 +57,11 @@ const Oraganiser = () => {
                 height={height}
                 className={classname}
               />
-              <p className="font-normal text-sm text-black pt-6 mr-5">
+              <p className="font-normal text-sm text-black pt-6 mr-5 text-center">
                 {images[index].name}
               </p>
             </div>
           ))}
-          {/* {images.map(({ src, height, width }, index) => (
-            <div key={index+1} className="w-full">
-              <Image
-                src={src}
-                alt={`Slide ${index + 2}`}
-                width={width}
-                height={height}
-                // className="w-full h-full object-cover"
-              />
-            </div>
-          ))} */}
         </div>
 
         <button
