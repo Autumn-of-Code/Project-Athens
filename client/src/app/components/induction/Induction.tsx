@@ -74,6 +74,11 @@ const Induction = () => {
           </p>
         </div>
       </div>
+      <div>
+        <button className="bg-primary text-[#fffbd9] text-sm font-light p-6 rounded-[12px] m-6">
+          Apply Now
+        </button>
+      </div>
     </div>
   );
 };
