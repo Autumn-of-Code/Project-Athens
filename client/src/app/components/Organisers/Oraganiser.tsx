@@ -27,7 +27,7 @@ const Oraganiser = () => {
       classname: "ml-10",
     },
     {
-      src: "/",
+      src: "https://res.cloudinary.com/dqqyuvg1v/image/upload/v1725366457/Untitled_design_naamty.png",
       width: 200,
       height: 100,
       name: "Tech IIIT bbsr",
