@@ -34,7 +34,7 @@ const Oraganiser = () => {
       classname: "ml-12",
     },
     {
-      src: "/",
+      src: "https://res.cloudinary.com/dqqyuvg1v/image/upload/v1725437507/DSC_NITR_logo_mwkyvc.png",
       width: 500,
       height: 300,
       name: "GDSC NIT Rourkela",
