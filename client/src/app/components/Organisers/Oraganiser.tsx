@@ -55,7 +55,7 @@ const Oraganiser = () => {
   };
 
   return (
-    <div className="w-100% bg-white text-primary pl-12 font-semibold text-3xl text-left fontFamily-jost">
+    <div className="w-100% text-primary pl-12 font-semibold text-3xl text-left fontFamily-jost">
       Oragnisers
       <div className="relative w-full max-w-6xl mx-auto overflow-hidden mt-12">
         <div
@@ -71,7 +71,7 @@ const Oraganiser = () => {
                 height={height}
                 className={classname}
               />
-              <p className="font-normal text-sm text-black pt-6 mr-5 text-center">
+              <p className="font-normal text-sm text-black-pri pt-6 mr-5 text-center">
                 {images[index].name}
               </p>
             </div>

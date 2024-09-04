@@ -46,7 +46,7 @@ const Induction = () => {
   ];
 
   return (
-    <div className="w-100% bg-white text-primary font-semibold text-3xl text-center fontFamily-jost pt-2">
+    <div className="w-100%  text-primary font-semibold text-3xl text-center fontFamily-jost pt-2">
       We are Inducting...!!!
       <div className="w-90% flex justify-evenly items-center pt-12 pb-5 ">
         {groups.map((group, index) => (
@@ -58,7 +58,7 @@ const Induction = () => {
               height={group.height}
               className={group.classname}
             />
-            <p className="font-normal text-black text-base p-8">
+            <p className="font-normal text-black-pri text-base p-8">
               {group.content}
             </p>
           </div>
