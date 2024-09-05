@@ -1,6 +1,6 @@
 import React from "react";
 
-//what about the font ?
+//font style not added
 
 const Footer: React.FC = () => {
   return (
