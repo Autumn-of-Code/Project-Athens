@@ -12,7 +12,7 @@ const Statistics: React.FC = () => {
           by Numbers...
         </div>
       </div>
-      <div className="flex flex-col text-center md:flex-row justify-center items-center md:gap-x-56 gap-y-4 mt-20">
+      <div className="flex flex-col text-center md:flex-row justify-center items-center md:gap-x-56 gap-y-4 mt-10 sm:mt-20">
         {stats.map((stat, index) => (
           <div
             key={index}
