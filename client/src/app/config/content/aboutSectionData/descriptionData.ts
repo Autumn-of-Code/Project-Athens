@@ -1,0 +1,2 @@
+export const DescriptionData =
+  "Our mission is to equip students and early-career professionals with the skills and confidence needed to make meaningful contributions to open-source projects. This event offers a hands-on experience working on real-world projects, guided by experienced mentors. By participating, you'll be well-prepared to apply for prestigious programs like Google Summer of Code (GSoC), LFX Mentorship, Outreachy, and more.";
