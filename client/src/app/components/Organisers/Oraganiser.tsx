@@ -55,45 +55,47 @@ const Oraganiser = () => {
   };
 
   return (
-    <div className="w-100% text-primary pl-12 font-jost text-3xl text-left">
-    Organisers
-    <div className="relative w-full max-w-6xl mx-auto overflow-hidden mt-12">
-      <div
-        className="flex transition-transform duration-500 ease-in-out"
-        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-      >
-        {images.map(({ src, height, width, classname }, index) => (
-          <div key={index} className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 pr-4 lg:pr-10 mb-9 pl-4 lg:pl-6">
-            <Image
-              src={src}
-              alt={`Slide ${index + 1}`}
-              width={width}
-              height={height}
-              className={classname}
-            />
-            <p className="font-normal text-sm text-black-pri pt-6 mr-5 text-center">
-              {images[index].name}
-            </p>
-          </div>
-        ))}
+    <div className="w-100% text-primary font-jost text-3xl text-left">
+      <p className="pl-12">Organisers</p>
+      <div className="relative w-full max-w-6xl mx-auto overflow-hidden mt-12">
+        <div
+          className="flex transition-transform duration-500 ease-in-out"
+          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+        >
+          {images.map(({ src, height, width, classname }, index) => (
+            <div
+              key={index}
+              className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 pr-4 lg:pr-10 mb-9 pl-4 lg:pl-6"
+            >
+              <Image
+                src={src}
+                alt={`Slide ${index + 1}`}
+                width={width}
+                height={height}
+                className={classname}
+              />
+              <p className="font-normal text-sm text-black-pri pt-6 mr-5 text-center">
+                {images[index].name}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        <button
+          onClick={prevSlide}
+          className="absolute top-1/2 left-0 transform -translate-y-1/2 p-2"
+        >
+          &#8249;
+        </button>
+
+        <button
+          onClick={nextSlide}
+          className="absolute top-1/2 right-0 transform -translate-y-1/2 p-2"
+        >
+          &#8250;
+        </button>
       </div>
-  
-      <button
-        onClick={prevSlide}
-        className="absolute top-1/2 left-0 transform -translate-y-1/2 p-2"
-      >
-        &#8249;
-      </button>
-  
-      <button
-        onClick={nextSlide}
-        className="absolute top-1/2 right-0 transform -translate-y-1/2 p-2"
-      >
-        &#8250;
-      </button>
     </div>
-  </div>
-  
   );
 };
 
