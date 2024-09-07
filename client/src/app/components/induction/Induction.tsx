@@ -46,11 +46,11 @@ const Induction = () => {
   ];
 
   return (
-    <div className="w-100%  text-primary font-semibold text-3xl text-center fontFamily-jost pt-2">
+    <div className="w-100% text-primary font-semibold text-3xl text-center fontFamily-jost pt-2">
       We are Inducting...!!!
-      <div className="w-90% flex justify-evenly items-center pt-12 pb-5 ">
+      <div className="w-full sm:w-11/12 lg:w-full mx-auto flex sm:flex-wrap lg:flex-nowrap justify-center sm:justify-evenly items-center pt-12 pb-5">
         {groups.map((group, index) => (
-          <div key={index}>
+          <div key={index} className="w-full sm:w-1/2 lg:w-1/4 p-4">
             <Image
               src={group.src}
               alt={group.alt}
@@ -58,14 +58,14 @@ const Induction = () => {
               height={group.height}
               className={group.classname}
             />
-            <p className="font-normal text-black-pri text-base p-8">
+            <p className="font-normal text-black-pri text-sm sm:text-base p-4">
               {group.content}
             </p>
           </div>
         ))}
       </div>
-      <div>
-        <button className="bg-primary text-[#fffbd9] text-sm font-light p-6 rounded-[12px] m-6">
+      <div className="text-center">
+        <button className="bg-primary text-[#fffbd9] text-sm sm:text-base font-light p-3 sm:p-6 rounded-[12px] m-3 sm:m-6">
           Apply Now
         </button>
       </div>
