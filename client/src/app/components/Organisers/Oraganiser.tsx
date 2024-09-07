@@ -55,7 +55,7 @@ const Oraganiser = () => {
   };
 
   return (
-    <div className="w-100% text-primary pl-12 font-semibold text-3xl text-left fontFamily-jost">
+    <div className="w-100% text-primary pl-12 font-jost text-3xl text-left">
     Organisers
     <div className="relative w-full max-w-6xl mx-auto overflow-hidden mt-12">
       <div
