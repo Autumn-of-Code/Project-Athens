@@ -19,7 +19,6 @@ const config: Config = {
         jost: "var(--jost)",
       },
     },
-  },
-  plugins: [],
+    plugins: [],
 };
 export default config;

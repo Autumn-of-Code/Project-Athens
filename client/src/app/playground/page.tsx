@@ -1,14 +1,12 @@
 import React from "react";
-import Induction from "../components/induction/Induction";
-import Oraganiser from "../components/Organisers/Oraganiser";
+import Timeline from "../components/timeline/Timeline";
 
 const Playground: React.FC = () => {
-  return (
-    <div>
-      <Induction />
-      <Oraganiser />
-    </div>
-  );
+    return (
+        <div className="">
+            <Timeline />
+        </div>
+    );
 };
 
 export default Playground;
