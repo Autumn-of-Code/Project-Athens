@@ -1,6 +1,4 @@
-import Image from "next/image";
 import NavBar from "./components/navbar/NavBar";
-
 import Timeline from "./components/timeline/Timeline";
 import { HeroMain } from "./components/navbar/hero_section/heroMain";
 import { AboutMain } from "./components/navbar/about_section/aboutMain";
