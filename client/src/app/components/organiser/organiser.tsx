@@ -6,10 +6,10 @@ import Image from "next/image";
 const Oraganiser = () => {
   const images = [
     {
-      src: "https://res.cloudinary.com/dqqyuvg1v/image/upload/v1725299204/GDSC_BBSR_1_lpsskx.png",
+      src: "https://res.cloudinary.com/dxsyc4p2j/image/upload/v1725794784/GDG_LOGO_fxtkok.png",
       width: 500,
       height: 300,
-      name: "GDSC Silicon University",
+      name: "GDG on campus NITR",
       classname: "mb-5  ml-2  mt-8",
     },
     {
@@ -34,10 +34,10 @@ const Oraganiser = () => {
       classname: "ml-12",
     },
     {
-      src: "https://res.cloudinary.com/dqqyuvg1v/image/upload/v1725437507/DSC_NITR_logo_mwkyvc.png",
+      src: "https://res.cloudinary.com/dqqyuvg1v/image/upload/v1725299204/GDSC_BBSR_1_lpsskx.png",
       width: 500,
       height: 300,
-      name: "GDSC NIT Rourkela",
+      name: "GDSC Silicon University",
       classname: "mb-5  ml-2  mt-8",
     },
   ];
