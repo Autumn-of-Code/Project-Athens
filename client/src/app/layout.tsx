@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${raleway.variable} ${jost.variable}`}
+        className={`${inter.variable} ${raleway.variable} ${jost.variable} bg`}
       >
         {children}
       </body>

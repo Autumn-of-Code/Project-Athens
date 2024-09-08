@@ -3,7 +3,7 @@ import { stats, terms_conditions } from "../../config/content/statsData"; // Adj
 
 const Statistics: React.FC = () => {
   return (
-    <div >
+    <div>
       <div className="text-center sm:text-left flex flex-col sm:ml-10 md:ml-20 gap-y-3 pt-20">
         <div className="text-4xl md:text-5xl text-red-600">
           Autumn of Code
