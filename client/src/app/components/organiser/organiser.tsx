@@ -20,10 +20,10 @@ const Oraganiser = () => {
       classname: "ml-12",
     },
     {
-      src: "https://res.cloudinary.com/dqqyuvg1v/image/upload/v1725299204/os_community_logo_1_i1dkn3.png",
+      src: "https://res.cloudinary.com/dxsyc4p2j/image/upload/v1725794313/DOC-20240821-WA0019_dgwwaq.png",
       width: 200,
       height: 100,
-      name: "S.Dev Community",
+      name: "OS Community",
       classname: "ml-10",
     },
     {
