@@ -1,17 +1,22 @@
 import type { Metadata } from "next";
-import { Inter, Jost } from "next/font/google";
+import { Inter, Jost, Raleway } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
-    subsets: ["latin"],
-    weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-    variable: "--inter",
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--inter",
+});
+const jost = Jost({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--jost",
 });
 
-const jost = Jost({
-    subsets: ["latin"],
-    weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-    variable: "--jost",
+const raleway = Raleway({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--raleway",
 });
 
 export const metadata: Metadata = {
@@ -24,11 +29,13 @@ export default function RootLayout({
 }: Readonly<{
     children: React.ReactNode;
 }>) {
-    return (
-        <html lang="en">
-            <body className={`${inter.variable} ${jost.className} bg`}>
-                {children}
-            </body>
-        </html>
-    );
+  return (
+    <html lang="en">
+      <body
+        className={`${inter.variable} ${raleway.variable} ${jost.variable}`}
+      >
+        {children}
+      </body>
+    </html>
+  );
 }
