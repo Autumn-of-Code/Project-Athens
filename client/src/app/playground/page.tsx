@@ -1,14 +1,12 @@
 import React from "react";
-import Statistics from "../components/statistics/statistics";
-import Prizes from "../components/prizes/prizes";
+import Timeline from "../components/timeline/Timeline";
 
 const Playground: React.FC = () => {
-  return (
-    <div>
-      <Statistics />
-      <Prizes />
-    </div>
-  );
+    return (
+        <div className="">
+            <Timeline />
+        </div>
+    );
 };
 
 export default Playground;
