@@ -5,14 +5,10 @@ const Statistics: React.FC = () => {
   return (
     <div>
       <div className="text-center sm:text-left flex flex-col sm:ml-10 md:ml-20 gap-y-3 pt-20">
-        <div className="text-4xl md:text-5xl text-red-600">
-          Autumn of Code
-        </div>
-        <div className="text-4xl md:text-5xl font-light">
-          by Numbers...
-        </div>
+        <div className="text-4xl md:text-5xl text-red-600">Autumn of Code</div>
+        <div className="text-4xl md:text-5xl font-light">by Numbers...</div>
       </div>
-      <div className="flex flex-col text-center md:flex-row justify-center items-center md:gap-x-56 gap-y-4 mt-10 sm:mt-20">
+      <div className="flex flex-col lg:flex-row justify-center items-center sm:gap-x-32 xl:gap-x-64 gap-y-4 mt-16 ml-10 mr-10">
         {stats.map((stat, index) => (
           <div
             key={index}
@@ -22,10 +18,12 @@ const Statistics: React.FC = () => {
             <span className="text-5xl md:text-8xl text-red-600 my-3 sm:my-6">
               {stat.value}{" "}
             </span>
-            <div className="text-3xl md:text-4xl w-fit sm:leading-9 md:leading-10">{stat.end_label}</div>
+            <div className="text-3xl md:text-4xl w-fit sm:leading-9 md:leading-10">
+              {stat.end_label}
+            </div>
           </div>
         ))}
-        </div>
+      </div>
       <div className="text-xs text-center sm:text-sm md:text-base mt-10 sm:mt-20 text-gray-500 px-4 md:px-0">
         {terms_conditions}
       </div>

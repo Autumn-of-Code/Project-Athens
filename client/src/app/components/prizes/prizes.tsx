@@ -1,5 +1,5 @@
 import React from "react";
-import { prizes } from "../../config/content/prizeData"; 
+import { prizes } from "../../config/content/prizeData";
 
 const Prizes: React.FC = () => {
   return (
@@ -9,7 +9,7 @@ const Prizes: React.FC = () => {
           WIN Exciting Prizes
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-center items-center md:gap-x-64 gap-y-4 mt-16 md:ml-20">
+      <div className="flex flex-col lg:flex-row justify-center items-center sm:gap-x-40 xl:gap-x-64 gap-y-4 mt-16 md:ml-10">
         {prizes.map((prize, index) => (
           <div
             key={index}
@@ -21,7 +21,9 @@ const Prizes: React.FC = () => {
             </span>{" "}
             Contributors
             <div className="mb-4 mt-2 sm:mt-10">
-              <div className="text-xl md:text-3xl leading-6 md:leading-7">{prize.prize}</div>
+              <div className="text-xl md:text-3xl leading-6 md:leading-7">
+                {prize.prize}
+              </div>
               <a
                 href={prize.descriptionLink}
                 target="_blank"
