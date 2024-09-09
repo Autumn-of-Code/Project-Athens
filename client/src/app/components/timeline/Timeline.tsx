@@ -2,6 +2,7 @@ import React from "react";
 import { timelineEvents } from "@/app/config/Timeline/timeline";
 import TimelineCard from "./TimelineCard";
 import Image from "next/image";
+import { line } from "@/app/config/Timeline/timeline";
 export default function Timeline() {
     return (
         <div className="p-20">
@@ -18,7 +19,7 @@ export default function Timeline() {
                             className="flex flex-col justify-end relative"
                         >
                             <Image
-                                src={"/1.png"}
+                                src={line}
                                 alt="1"
                                 width={1000}
                                 height={200}

@@ -49,7 +49,7 @@ export default function Pill({
                         className={`z-20 absolute ${
                             curved === "right"
                                 ? "top-[0.2rem] -right-[6.1rem] scale-y-[1.01]"
-                                : "-top-[17.4rem]  -left-[8rem] scale-y-[1.05]"
+                                : "-top-[17.4rem] -left-[4rem]  2xl:-left-[7.2rem] scale-y-[1.05]"
                         }`}
                     />
                 )}
