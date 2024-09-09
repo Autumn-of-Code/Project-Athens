@@ -18,9 +18,11 @@ const TimelineCard = ({
 }: TimelineCardType) => {
     return (
         <div className="relative font-inter w-full h-52 text-center grid place-items-center border-2 border-black-pri rounded-xl py-5 gap-3 text-black-pri">
-            <p className="font-[500] text-[22px]">{title}</p>
-            <p className="text-[18px] font-[300]">{date}</p>
-            <p className="text-[#F12727] text-[18px] font-[600]">{status}</p>
+            <p className="font-[500] text-[20px] xl:text-[22px]">{title}</p>
+            <p className="xl:text-[18px] text-[16px] font-[300]">{date}</p>
+            <p className="text-[#F12727] text-[16px] xl:text-[18px] font-[600]">
+                {status}
+            </p>
             <div className="absolute bottom-[-10px] left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-t-[10px] border-t-black-pri"></div>
             <Pill
                 align={align!}
@@ -35,7 +37,9 @@ const TimelineCard = ({
                 width={imgSize}
                 height={imgSize}
                 className={`z-20 absolute -bottom-[3.5rem] ${
-                    imgPos === "left" ? "-left-16" : "-right-16"
+                    imgPos === "left"
+                        ? "-left-24 lg:-left-20 xl:-left-16"
+                        : "-right-24 lg:-right-20 xl:-right-16"
                 }`}
             />
         </div>

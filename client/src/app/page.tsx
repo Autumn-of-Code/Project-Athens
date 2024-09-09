@@ -9,17 +9,17 @@ import Induction from "./components/induction/induction";
 import Oraganiser from "./components/organiser/organiser";
 
 export default function Home() {
-  return (
-    <div>
-      <NavBar />
+    return (
+        <div>
+            {/* <NavBar />
       <HeroMain />
       <AboutMain />
-      <Induction />
-      <Timeline />
-      <Statistics />
+      <Induction /> */}
+            <Timeline />
+            {/* <Statistics />
       <Prizes />
       <Oraganiser />
-      <Footer />
-    </div>
-  );
+      <Footer /> */}
+        </div>
+    );
 }
