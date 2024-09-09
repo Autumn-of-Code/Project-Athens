@@ -25,21 +25,25 @@ const Oraganiser = () => {
           className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
-          {images.map(({ src, height, width, classname }, index) => (
+          {images.map(({ src, height, width, classname, name }, index) => (
             <div
               key={index}
               className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 pr-4 lg:pr-10 mb-9 pl-4 lg:pl-6"
             >
-              <Image
-                src={src}
-                alt={`Slide ${index + 1}`}
-                width={width}
-                height={height}
-                className={classname}
-              />
-              <p className="font-normal text-sm text-black-pri pt-6 mr-5 text-center">
-                {images[index].name}
-              </p>
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden p-4">
+                <Image
+                  src={src}
+                  alt={`Slide ${index + 1}`}
+                  width={width}
+                  height={height}
+                  className={`object-cover rounded-lg ${classname}`}
+                />
+                <div className="pt-4">
+                  <p className="font-semibold text-lg text-center text-black-pri">
+                    {name}
+                  </p>
+                </div>
+              </div>
             </div>
           ))}
         </div>
