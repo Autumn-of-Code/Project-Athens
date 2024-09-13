@@ -9,17 +9,17 @@ import { HeroMain } from "./components/hero_section/heroMain";
 import { AboutMain } from "./components/about_section/aboutMain";
 
 export default function Home() {
-  return (
-    <div>
-      <NavBar />
-      <HeroMain />
-      <AboutMain />
-      <Induction />
-      <Timeline />
-      <Statistics />
-      <Prizes />
-      <Oraganiser />
-      <Footer />
-    </div>
-  );
+    return (
+        <div>
+            <NavBar />
+            <HeroMain />
+            <AboutMain />
+            <Induction />
+            <Timeline />
+            <Statistics />
+            <Prizes />
+            <Oraganiser />
+            <Footer />
+        </div>
+    );
 }

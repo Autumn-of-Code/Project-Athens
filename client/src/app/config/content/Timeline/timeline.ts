@@ -27,7 +27,7 @@ export const timelineEvents = [
     },
     {
         date: "Sept 20, 2024",
-        title: "Registration Open for Participants",
+        title: "Registration Open for",
         status: "Participants",
         image: "https://res.cloudinary.com/dmvdbpyqk/image/upload/v1725309320/char3_gembtn.png",
         align: "center",
