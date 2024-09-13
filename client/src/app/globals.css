@@ -35,8 +35,8 @@
     position: relative;
     z-index: 2;
 }
-.vertical-timeline-element::after {
-    content: none;
+.vertical-timeline-element-content {
+    box-shadow: none !important;
 }
 
 @layer base {

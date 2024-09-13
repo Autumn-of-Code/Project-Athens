@@ -11,15 +11,15 @@ import Oraganiser from "./components/organiser/organiser";
 export default function Home() {
     return (
         <div>
-            {/* <NavBar />
-      <HeroMain />
-      <AboutMain />
-      <Induction /> */}
+            <NavBar />
+            <HeroMain />
+            <AboutMain />
+            <Induction />
             <Timeline />
-            {/* <Statistics />
-      <Prizes />
-      <Oraganiser />
-      <Footer /> */}
+            <Statistics />
+            <Prizes />
+            <Oraganiser />
+            <Footer />
         </div>
     );
 }
