@@ -30,7 +30,7 @@ const Oraganiser = () => {
               key={index}
               className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 pr-4 lg:pr-10 mb-9 pl-4 lg:pl-6"
             >
-              <div className="bg-white rounded-lg shadow-lg overflow-hidden p-4">
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden p-4 max-[500px]:h-[300px] max-[500px]:w-[400px]">
                 <Image
                   src={src}
                   alt={`Slide ${index + 1}`}
@@ -38,7 +38,7 @@ const Oraganiser = () => {
                   height={height}
                   className={`object-cover rounded-lg ${classname}`}
                 />
-                <div className="pt-4">
+                <div className="mt-4">
                   <p className="font-semibold text-lg text-center text-black-pri">
                     {name}
                   </p>
@@ -50,14 +50,14 @@ const Oraganiser = () => {
 
         <button
           onClick={prevSlide}
-          className="absolute top-1/2 left-0 transform -translate-y-1/2 p-2"
+          className="absolute top-1/2 left-[-9px] transform -translate-y-1/2 p-3 bg-[#F12727] text-[#fffbd9] rounded-full shadow-lg hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-all duration-300"
         >
           &#8249;
         </button>
 
         <button
           onClick={nextSlide}
-          className="absolute top-1/2 right-0 transform -translate-y-1/2 p-2"
+          className="absolute top-1/2 right-0 transform -translate-y-1/2 p-3 bg-[#F12727] text-[#fffbd9] rounded-full shadow-lg hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-all duration-300"
         >
           &#8250;
         </button>
