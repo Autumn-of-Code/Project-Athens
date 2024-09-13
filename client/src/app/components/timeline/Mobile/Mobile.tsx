@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
-import { timelineEvents } from "@/app/config/Timeline/timeline";
-import TimelineCard2 from "./TimelineCard2";
+import { timelineEvents } from "@/app/config/content/Timeline/timeline";
 import {
     VerticalTimeline,
     VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import TimelineCard from "./TimelineCard";
 export default function Mobile() {
     return (
         <div className="max-w-6xl mx-auto my-16">
@@ -21,8 +21,9 @@ export default function Mobile() {
                                     background: "#F12727",
                                     color: "#fff",
                                 }}
+                                contentStyle={{ background: "#00000000" }}
                             >
-                                <TimelineCard2
+                                <TimelineCard
                                     key={event.title}
                                     date={event.date!}
                                     image={event.image!}

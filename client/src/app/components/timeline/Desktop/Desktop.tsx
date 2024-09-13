@@ -1,8 +1,8 @@
 import React from "react";
-import { timelineEvents } from "@/app/config/Timeline/timeline";
+import { timelineEvents } from "@/app/config/content/Timeline/timeline";
 import TimelineCard from "./TimelineCard";
 import Image from "next/image";
-import { line } from "@/app/config/Timeline/timeline";
+import { line } from "@/app/config/content/Timeline/timeline";
 export default function Desktop() {
     return (
         <div className="grid grid-cols-3 gap-y-20 gap-x-5 xl:gap-20 max-w-6xl mx-auto mt-20">

@@ -1,23 +1,16 @@
 import Image from "next/image";
 import React from "react";
-import { line, rightCurve, leftCurve } from "@/app/config/Timeline/timeline";
+import {
+    line,
+    rightCurve,
+    leftCurve,
+} from "@/app/config/content/Timeline/timeline";
+import { PillType } from "@/app/types/timeline";
 
-export default function Pill({
-    align,
-    curved,
-    isLast,
-    midEnd,
-    corner,
-}: {
-    align: String;
-    curved: String;
-    isLast: boolean;
-    midEnd: String;
-    corner: String;
-}) {
+export default function Pill({ align, curved, isLast, corner }: PillType) {
     return (
         <div>
-            <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 bg-black-pri p-1 rounded-full border border-black-pri z-20">
+            <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 bg-black p-1 rounded-full border border-black z-20">
                 <div className="h-5 w-5 bg-[#DDDDDD] rounded-full" />
             </div>
             <div

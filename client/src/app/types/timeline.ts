@@ -8,6 +8,13 @@ export type TimelineCardType = {
     isLast?: boolean;
     midEnd?: string;
     corner?: string;
-    imgPos: string;
-    imgSize: number;
+    imgPos?: string;
+    imgSize?: number;
+};
+
+export type PillType = {
+    align: String;
+    curved: String;
+    isLast: boolean;
+    corner: String;
 };
