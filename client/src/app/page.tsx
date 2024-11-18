@@ -1,4 +1,4 @@
-import NavBar from "./components/navbar/NavBar";
+import NavBar from "./components/navbar/nav";
 import Timeline from "./components/timeline/Timeline";
 import Statistics from "./components/statistics/statistics";
 import Prizes from "./components/prizes/prizes";

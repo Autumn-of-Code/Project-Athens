@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import { groups } from "@/app/config/content/InductionData/InductionData";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 const Induction = () => {
   return (
@@ -23,9 +25,11 @@ const Induction = () => {
         ))}
       </div>
       <div className="text-center w-500px">
-        <button className="bg-[#F12727] text-[#fffbd9] text-sm sm:text-base font-light p-3 sm:px-6 rounded-[12px] m-3 sm:m-6">
-          Apply Now
-        </button>
+        <Button variant="default">
+          <Link href="https://discord.gg/Aa6qnZRhXP">
+            Apply Now
+          </Link>
+        </Button>
       </div>
     </div>
   );
