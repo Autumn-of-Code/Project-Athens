@@ -1,14 +1,15 @@
 import React from "react";
-import { timelineEvents } from "@/app/config/Timeline/timeline";
+import { line, timelineEvents } from "@/app/config/Timeline/timeline";
 import TimelineCard from "./TimelineCard";
 import Image from "next/image";
+import TimelineMobile from "./TimelineMobile";
 export default function Timeline() {
     return (
-        <div className="p-20">
+        <div className="py-20 px-8 md:px-20">
             <h1 className="font-jost font-500 text-[48px] text-[#F12727] ">
                 Timeline
             </h1>
-            <div className="grid grid-cols-3 gap-20 max-w-6xl mx-auto mt-20">
+            <div className="hidden md:grid grid-cols-3 gap-20 max-w-6xl mx-auto mt-20">
                 {timelineEvents.map((event, index) =>
                     event.date ? (
                         <TimelineCard key={index} {...event} />
@@ -18,7 +19,7 @@ export default function Timeline() {
                             className="flex flex-col justify-end relative"
                         >
                             <Image
-                                src={"/1.png"}
+                                src={line}
                                 alt="1"
                                 width={1000}
                                 height={200}
@@ -34,6 +35,7 @@ export default function Timeline() {
                     )
                 )}
             </div>
+            <TimelineMobile/>
         </div>
     );
 }
