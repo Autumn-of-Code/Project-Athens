@@ -9,7 +9,7 @@ export const HeroSectionDescription = () => {
           {descriptionData.map((item, index) => (
             <div
               key={index}
-              className="font-raleway font-[500] text-[18px] md:text-[24px] text-[#323232] leading-[28px] md:leading-[32px] tracking-[0.04em] text-left"
+              className="font-raleway font-[500] text-[16px] md:text-body-lg text-[#323232] leading-[28px] md:leading-[32px] tracking-[0.04em] text-left"
             >
               {item}
             </div>
