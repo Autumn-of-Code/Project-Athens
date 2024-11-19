@@ -35,9 +35,9 @@ export default function TimelineMobile() {
               <Image
                 src={event.image as string}
                 alt={event.title || "Timeline Event"}
-                width={event.imgSize || 200}
-                height={event.imgSize || 200}
-                className="w-full h-auto object-cover"
+                width={100}
+                height={100}
+                className="object-cover"
               />
             </div>
           </div>
