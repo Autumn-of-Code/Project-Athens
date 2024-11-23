@@ -1,7 +1,8 @@
 "use client";
 
-import { navLinks } from "@/app/config/content/navData/navBarData";
+import { logoURL, navLinks } from "@/app/config/content/navData/navBarData";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -12,9 +13,13 @@ const NavBar = () => {
     <>
       <div className="flex flex-row justify-between items-center px-10 md:pr-[107px] md:pl-[129px] pt-6">
         <div className="flex flex-row gap-4 items-center">
-          <p className="px-4 py-3 md:px-9 md:py-6 bg-[#595959] rounded-[12px] text-3xl md:text-4xl text-white">
-            Logo
-          </p>
+          <Image
+            src={logoURL}
+            alt="Logo"
+            width={64}
+            height={64}
+            className="rounded-[12px]"
+          />
           <h1 className="text-2xl md:text-[32px] font-jost">Autumn of Code</h1>
         </div>
         <div className="hidden md:block">

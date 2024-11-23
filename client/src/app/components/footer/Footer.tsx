@@ -1,3 +1,5 @@
+import { logoURL } from "@/app/config/content/navData/navBarData";
+import Image from "next/image";
 import React from "react";
 
 const Footer: React.FC = () => {
@@ -5,9 +7,13 @@ const Footer: React.FC = () => {
     <div className="py-12 px-4">
       <div className="max-w-7xl mx-auto flex flex-col justify-between items-center backdrop-blur-sm bg-[#F5F5DC80] p-6 rounded-lg shadow-lg">
         <div className="flex flex-row gap-4 items-center mb-6">
-          <p className="px-4 py-3 md:px-9 md:py-6 bg-[#595959] rounded-[12px] text-3xl md:text-4xl text-white">
-            Logo
-          </p>
+          <Image
+            src={logoURL} 
+            alt="Logo" 
+            width={96}
+            height={96}
+            className="rounded-[12px]"
+          />
           <h1 className="text-2xl md:text-[32px] font-jost text-[#333333]">Autumn of Code</h1>
         </div>
 
