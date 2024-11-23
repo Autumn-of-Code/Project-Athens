@@ -1,6 +1,6 @@
 export const timelineEvents = [
     {
-        date: "Sept 10, 2024",
+        date: "Dec 10, 2024",
         title: "Registration for Projects",
         status: "OPENS",
         image: "https://res.cloudinary.com/dmvdbpyqk/image/upload/v1725309319/char1_t0ub5d.png",
@@ -12,7 +12,7 @@ export const timelineEvents = [
         align: "end",
     },
     {
-        date: "Sept 15, 2024",
+        date: "Dec 15, 2024",
         title: "Mentors & Campus Ambassadors Registration",
         status: "OPENS",
         image: "https://res.cloudinary.com/dmvdbpyqk/image/upload/v1725309319/char2_eysp8w.png",
@@ -26,7 +26,7 @@ export const timelineEvents = [
         midEnd: "left",
     },
     {
-        date: "Sept 20, 2024",
+        date: "Dec 20, 2024",
         title: "Registration Open for Participants",
         status: "Participants",
         image: "https://res.cloudinary.com/dmvdbpyqk/image/upload/v1725309320/char3_gembtn.png",
@@ -52,7 +52,7 @@ export const timelineEvents = [
     {
         date: "Feb 15, 2025",
         title: "Contribution Period",
-        status: "4 Months",
+        status: "2 Months",
         image: "https://res.cloudinary.com/dmvdbpyqk/image/upload/v1725309321/char5_sef1fv.png",
         align: "right",
         isLast: true,

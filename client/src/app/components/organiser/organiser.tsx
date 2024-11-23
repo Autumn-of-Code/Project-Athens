@@ -18,26 +18,28 @@ const Oraganiser = () => {
   };
 
   return (
-    <div className="w-100% text-[#F12727] font-jost text-3xl text-left">
-      <p className="pl-12">Organisers</p>
-      <div className="relative w-full max-w-6xl mx-auto overflow-hidden mt-12">
+    <div className="w-full text-[#F12727] font-jost text-3xl text-left">
+      <p className="pl-12 mb-8">Organisers</p>
+      <div className="relative w-full h-[300px] max-w-6xl mx-auto overflow-hidden">
         <div
-          className="flex transition-transform duration-500 ease-in-out"
+          className="flex items-center transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
-          {images.map(({ src, height, width, classname, name }, index) => (
+          {images.map(({ src, name, width, height }, index) => (
             <div
               key={index}
-              className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 pr-4 lg:pr-10 mb-9 pl-4 lg:pl-6"
+              className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/3 px-4 lg:px-6 mb-9"
             >
-              <div className="bg-white rounded-lg shadow-lg overflow-hidden p-4">
-                <Image
-                  src={src}
-                  alt={`Slide ${index + 1}`}
-                  width={width}
-                  height={height}
-                  className={`object-cover rounded-lg ${classname}`}
-                />
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden p-4 flex flex-col items-center justify-center h-[300px]">
+                <div className="h-[150px] w-[150px] flex items-center justify-center">
+                  <Image
+                    src={src}
+                    alt={`Slide ${index + 1}`}
+                    width={width}
+                    height={height}
+                    className="object-contain"
+                  />
+                </div>
                 <div className="pt-4">
                   <p className="font-semibold text-lg text-center text-black-pri">
                     {name}
@@ -50,14 +52,14 @@ const Oraganiser = () => {
 
         <button
           onClick={prevSlide}
-          className="absolute top-1/2 left-0 transform -translate-y-1/2 p-2"
+          className="absolute top-1/2 left-0 transform -translate-y-1/2"
         >
           &#8249;
         </button>
 
         <button
           onClick={nextSlide}
-          className="absolute top-1/2 right-0 transform -translate-y-1/2 p-2"
+          className="absolute top-1/2 right-0 transform -translate-y-1/2"
         >
           &#8250;
         </button>
